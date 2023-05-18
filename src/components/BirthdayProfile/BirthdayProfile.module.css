@@ -1,0 +1,62 @@
+.birthday-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  margin-right: 10px;
+  border: 1px solid #1b1b1b;
+  border-radius: 8px;
+  overflow: hidden;
+  direction: rtl;
+}
+
+.birthday-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin: 0 auto;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  width: 100%;
+  padding: 20px;
+  background-color: #1b1b1b;
+  color: #fff;
+  align-items: center;
+}
+
+.content .name {
+  color: #1b1b1b;
+  background-color: #fff;
+  padding: 4px 8px;
+  display: inline-block;
+  /* width: 80%; */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.content .date {
+  /* border: 1px solid #fff; */
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+}
+
+.date span {
+  margin-right: 10px;
+}

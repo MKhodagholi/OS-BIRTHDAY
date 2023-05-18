@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Iran Yekan";
+  font-weight: 400;
+  src: url("./assets/fonts/iranyekanregular.woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Iran Yekan";
+  border: 20px solid #8400ff;
+}
+
+.frame {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+/* day to night bg */
+
+.day-night .frame1 {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.day-night .frame2 {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.day-night .frame3 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.day-night .frame4 {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.day-night .frame5 {
+  background-color: rgba(0, 0, 0, 1);
+}
+/* .day-night .frame6 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.day-night .frame7 {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.day-night .frame8 {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.day-night .frame9 {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.day-night .frame10 {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.day-night .frame10 {
+  background-color: rgba(0, 0, 0, 1);
+} */
+
+/* night to day bg */
+
+.night-day .frame1 {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.night-day .frame2 {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.night-day .frame3 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.night-day .frame4 {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.night-day .frame5 {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+/* .night-day .frame6 {
+  background-color: rgb(106, 191, 64);
+}
+.night-day .frame7 {
+  background-color: rgb(88, 143, 61);
+}
+.night-day .frame8 {
+  background-color: rgb(69, 99, 54);
+}
+
+.night-day .frame9 {
+  background-color: rgb(48, 61, 41);
+}
+.night-day .frame10 {
+  background-color: rgb(25, 28, 23);
+}
+.night-day .frame11 {
+  background-color: rgb(0, 0, 0);
+} */

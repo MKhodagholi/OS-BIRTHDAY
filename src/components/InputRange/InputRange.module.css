@@ -1,0 +1,113 @@
+.input-range {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 90vw;
+}
+
+input[type="range"] {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  /*  slider progress trick  */
+  overflow: hidden;
+  border-radius: 42px;
+  height: 50px;
+}
+
+/* Track: webkit browsers */
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #ccc;
+  border-radius: 42px;
+  height: 50px;
+  width: 100%;
+}
+
+/* Track: Mozilla Firefox */
+input[type="range"]::-moz-range-track {
+  background: #ccc;
+  border-radius: 42px;
+  height: 50px;
+  width: 100%;
+}
+
+/* Thumb: webkit */
+input[type="range"]::-webkit-slider-thumb {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  height: 50px;
+  width: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #0c4de6;
+  /*  slider progress trick  */
+  box-shadow: -2025px 0 0 2000px #0c4de6;
+}
+
+/* Thumb: Firefox */
+input[type="range"]::-moz-range-thumb {
+  height: 46px;
+  width: 46px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #0c4de6;
+  /*  slider progress trick  */
+  box-shadow: -2025px 0 0 2000px #0c4de6;
+}
+
+.date-track {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  direction: rtl;
+}
+
+.xMonth {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.month {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(90vw / 12 - 10px);
+  text-align: center;
+  border-radius: 4px;
+}
+
+.month.active {
+  border: 4px solid #0c4de6;
+}
+
+.month .tick {
+  content: "";
+  position: absolute;
+  top: -8px;
+  width: 4px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #0c4de6;
+}
+
+.month span {
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  color: #0c4de6;
+}
