@@ -11,7 +11,9 @@ import {
   nightToDaySlider,
   sliderContainer,
 } from "./animation/animation";
-import { toGregorian } from "jalaali-js";
+import { useAudio } from "./hook/useAudio";
+
+import music1 from "./assets/music/19 Finesse (Recorded at Metropolis Studios, London) (Pheelz).mp3";
 
 function App() {
   const startYear = 1380;
@@ -50,8 +52,14 @@ function App() {
   const currentMonth =
     (value + 1 - startYear) % 12 === 0 ? 12 : (value + 1 - startYear) % 12;
 
+  const [isPlaying, toggle, audio, play] = useAudio(music1);
+
+  const appHoverHandler = () => {
+    play();
+  };
+
   return (
-    <div className="app">
+    <div className="app" onMouseEnter={appHoverHandler}>
       <InputRange
         startTime={startYear}
         endTime={endTime}
