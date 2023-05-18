@@ -125,7 +125,7 @@ const mordad = [
 
 const shahrivar = [
   { name: "آرش مرادی", image: arash, date: new Date(2001, 8, 11) },
-  { name: "معصومانه صفاکیش", image: safakish, date: new Date(2001, 7, 30) },
+  { name: "معصومه صفاکیش", image: safakish, date: new Date(2001, 7, 30) },
   { name: "پریا جوکار", image: pariya, date: new Date(2001, 8, 21) },
   { name: "حامد خسروی", image: hamed, date: new Date(2001, 8, 8) },
   { name: "امیررضا زارع", image: amirreza, date: new Date() },

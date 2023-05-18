@@ -14,7 +14,7 @@ const BirthdayProfile = ({ name, date, image, innerKey }) => {
   const item = {
     hidden: { opacity: 0, x: -1500, rotate: 0 },
     show: { opacity: 1, x: 0, rotate: 10 },
-    hover: { rotate: 0, transition: { duration: 0.3 } },
+    hover: { rotate: 0, transition: { duration: 0.3 }, zIndex: 1 },
     exit: { x: -200, y: 1000, rotate: 45 },
   };
 

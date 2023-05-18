@@ -10,14 +10,46 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  border-radius: 20px;
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+  max-height: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: #444;
+}
+
+@media screen and (max-width: 700px) {
+  .app {
+    padding-bottom: 400px;
+  }
+}
+
 .app {
   position: relative;
   display: flex;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
+  overflow-x: hidden;
   font-family: "Iran Yekan";
-  border: 20px solid #8400ff;
+  /* border: 20px solid #8400ff; */
 }
 
 .frame {
@@ -25,8 +57,15 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 100vh;
-  z-index: -1;
+  min-height: 100vh;
+  height: 100%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .frame {
+    height: 200vh;
+  }
 }
 
 /* day to night bg */
@@ -104,3 +143,34 @@
 .night-day .frame11 {
   background-color: rgb(0, 0, 0);
 } */
+
+.about-site {
+  width: 30%;
+  height: 40vh;
+  direction: rtl;
+  padding: 16px;
+  margin-top: 40px;
+}
+
+.about-site p {
+  margin: 1rem 0;
+}
+
+.about-site a {
+  display: inline-block;
+  color: #0c4de6;
+  text-decoration: none;
+  margin-top: 5px;
+  font-size: 14px;
+} 
+
+.about-site button {
+  outline: none;
+  background: transparent;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-family: "Iran Yekan";
+  cursor: pointer;
+  border: 2px solid #0c4de6;
+  margin-left: 10px;
+}

@@ -52,14 +52,43 @@ function App() {
   const currentMonth =
     (value + 1 - startYear) % 12 === 0 ? 12 : (value + 1 - startYear) % 12;
 
-  const [isPlaying, toggle, audio, play] = useAudio(music1);
+  // const [isPlaying, toggle, audio] = useAudio(music1);
 
-  const appHoverHandler = () => {
-    play();
+  const [audio] = useState(new Audio(music1));
+  // const [isPlaying, setIsPlaying] = useState(false);
+
+  const musicClickHandler = () => {
+    audio.play();
+  };
+
+  const offMusicHandler = () => {
+    audio.pause();
   };
 
   return (
-    <div className="app" onMouseEnter={appHoverHandler}>
+    <div className="app">
+      <div className="about-site">
+        <h3>درباره طرح:</h3>
+        <p>
+          ایده اولیه این بود که با تغییر زمان شب و روز هم تغییر کنند. ولی
+          متاسفانه به دلیل فیلتر بودن بیشتر منابع همچین کاری برام ممکمن نبود.
+        </p>
+        <p>
+          اگر ایده‌ای برای بهتر شدن یا با حال تر شدن سایت دارید لطفا از طریق
+          تلگرام به من پیام بدید.
+        </p>
+        <p>اگر هم تایم اسلپ صبح تا شب دارید برای من بفرستید خیلی عالی میشه.</p>
+        <p>
+          و در آخر اگر مشکلی دیدید ممنون میشم از طریق لینک زیر بهم بگید.
+          <br />
+          <a href="https://github.com/MKhodagholi/OS-BIRTHDAY/issues">
+            لینک ایشو های پروژه
+          </a>
+        </p>
+        <p>آیدی تلگرام من: mdkhodagholi@</p>
+        <button onClick={musicClickHandler}>موزیک</button>
+        <button onClick={offMusicHandler}>قطع موزیک</button>
+      </div>
       <InputRange
         startTime={startYear}
         endTime={endTime}

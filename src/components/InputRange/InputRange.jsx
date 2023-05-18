@@ -30,6 +30,9 @@ const InputRange = ({ onChange, startTime, endTime, value }) => {
         max={(endTime - startTime) * 12 - 1}
         step={1}
         onChange={onChange}
+        onClick={(e) => {
+          e.stopPropagation();
+        }}
       />
       <div className={classes.xMonth}>
         {monthsArray.map((month, index) => (

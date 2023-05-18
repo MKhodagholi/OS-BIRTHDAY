@@ -1,10 +1,16 @@
 .input-range {
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 10;
+  z-index: 1;
   width: 90vw;
+}
+
+@media screen and (max-width: 700px) {
+  .input-range {
+    background-color: #fff;
+  }
 }
 
 input[type="range"] {
