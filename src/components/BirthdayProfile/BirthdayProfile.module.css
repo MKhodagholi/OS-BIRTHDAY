@@ -46,6 +46,12 @@
   text-align: center;
 }
 
+.content .name:hover {
+  text-overflow: initial;
+  overflow: visible;
+  white-space: nowrap;
+}
+
 .content .date {
   /* border: 1px solid #fff; */
   padding: 4px 8px;
