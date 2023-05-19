@@ -13,6 +13,10 @@
   direction: rtl;
 }
 
+.birthday-card:nth-child(2n + 1) .content {
+  flex-direction: row-reverse;
+}
+
 .birthday-card img {
   width: 100%;
   height: 100%;
@@ -25,10 +29,8 @@
   position: absolute;
   bottom: 0;
   display: flex;
-  justify-content: space-between;
   height: 30px;
   width: 100%;
-  padding: 20px;
   background-color: #1b1b1b;
   color: #fff;
   align-items: center;
@@ -39,28 +41,33 @@
   background-color: #fff;
   padding: 4px 8px;
   display: inline-block;
-  /* width: 80%; */
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   text-align: center;
+  width: 50%;
+  transition: 0.5s 0.1s ease;
 }
 
-.content .name:hover {
-  text-overflow: initial;
-  overflow: visible;
-  white-space: nowrap;
+.birthday-card:hover .name {
+  display: block;
+  width: 100%;
+  overflow: auto;
 }
 
-.content .date {
-  /* border: 1px solid #fff; */
-  padding: 4px 8px;
-  border-radius: 4px;
+.birthday-card:hover .date {
+  display: none;
+  opacity: 0;
 }
 
 .date {
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  border-radius: 4px;
+  width: 50%;
+  text-align: center;
 }
 
 .date span {
