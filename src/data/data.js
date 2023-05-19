@@ -75,7 +75,7 @@ const emptyYear = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12].map((_) => [{}]);
 
 const farvardin = [
   { name: "سجاد دودابی", image: sajad, date: new Date(2001, 2, 25) },
-  { name: "نوید صادقی", image: naveed, date: new Date(2001, 2, 28) },
+  { name: "نوید منشی‌زاده", image: naveed, date: new Date(2001, 2, 27) },
   { name: "امیرحسین موئیدی", image: amir2, date: new Date(2001, 3, 9) },
   { name: "سینا امیدوار", image: sina, date: new Date(2001, 3, 10) },
   { name: "الهام ظهیر", image: elham, date: new Date(2001, 3, 15) },
@@ -124,13 +124,13 @@ const mordad = [
 ]; // mordad;
 
 const shahrivar = [
-  { name: "آرش مرادی", image: arash, date: new Date(2001, 8, 11) },
   { name: "معصومه صفاکیش", image: safakish, date: new Date(2001, 7, 30) },
-  { name: "پریا جوکار", image: pariya, date: new Date(2001, 8, 21) },
   { name: "حامد خسروی", image: hamed, date: new Date(2001, 8, 8) },
-  { name: "امیررضا زارع", image: amirreza, date: new Date() },
-  { name: "حسین برقعی", image: hosein, date: new Date() },
-  { name: "علیرضا شاهمرادی", image: shahmoradiImage, date: new Date() },
+  { name: "آرش مرادی", image: arash, date: new Date(2001, 8, 11) },
+  { name: "حسین برقعی", image: hosein, date: new Date(2021, 8, 12) },
+  { name: "امیررضا زارع", image: amirreza, date: new Date(2001, 8, 17) },
+  { name: "علیرضا شاهمرادی", image: shahmoradiImage, date: new Date(2020, 8, 20) },
+  { name: "پریا جوکار", image: pariya, date: new Date(2001, 8, 21) },
 ];
 
 const mehr = [
@@ -156,7 +156,7 @@ const dey = [
 ];
 
 const bahman = [
-  { name: "رقابی", image: reghabi, date: new Date(2002, 1, 2) },
+  { name: "علیرضا رقابی", image: reghabi, date: new Date(2002, 1, 2) },
   { name: "علی مفیدیان", image: ali, date: new Date(2002, 1, 7) },
 ];
 
