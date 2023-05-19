@@ -9,6 +9,7 @@ import elham from "../assets/images/persons/elham.jpg"; // 1
 
 // 2
 
+import mohammadMahdi from "../assets/images/persons/mamadmehdi_vaDostan.jpg";
 import ghadirzadeImage from "../assets/images/persons/ghadirzade.jpg"; // 2
 import sadighi from "../assets/images/persons/Mr.sadighi.jpg"; // 2
 import parsaMahani from "../assets/images/persons/parsa_mahani.jpg"; // 2
@@ -83,6 +84,7 @@ const farvardin = [
 ];
 
 const ordibehesht = [
+  { name: "محمد مهدی و دوستان", image: mohammadMahdi, date: new Date(2001, 3, 21) },
   {
     name: "پارسا و ماهان",
     image: parsaMahani,
@@ -129,7 +131,11 @@ const shahrivar = [
   { name: "آرش مرادی", image: arash, date: new Date(2001, 8, 11) },
   { name: "حسین برقعی", image: hosein, date: new Date(2021, 8, 12) },
   { name: "امیررضا زارع", image: amirreza, date: new Date(2001, 8, 17) },
-  { name: "علیرضا شاهمرادی", image: shahmoradiImage, date: new Date(2020, 8, 20) },
+  {
+    name: "علیرضا شاهمرادی",
+    image: shahmoradiImage,
+    date: new Date(2020, 8, 20),
+  },
   { name: "پریا جوکار", image: pariya, date: new Date(2001, 8, 21) },
 ];
 
