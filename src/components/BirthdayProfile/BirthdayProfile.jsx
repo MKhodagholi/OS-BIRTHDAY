@@ -27,6 +27,14 @@ const BirthdayProfile = ({ name, date, image, innerKey }) => {
       exit={{ x: -200, y: 1000, rotate: 45 }}
       key={innerKey}
       layout
+      drag
+      dragConstraints={{
+        left: 100,
+        bottom: 0,
+        top: 100,
+        right: 0,
+      }}
+      dragElastic={0.7}
       transition={{
         duration: 1,
       }}

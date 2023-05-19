@@ -35,12 +35,6 @@
   background-color: #444;
 }
 
-@media screen and (max-width: 700px) {
-  .app {
-    padding-bottom: 400px;
-  }
-}
-
 .app {
   position: relative;
   display: flex;
@@ -49,7 +43,7 @@
   overflow: auto;
   overflow-x: hidden;
   font-family: "Iran Yekan";
-  /* border: 20px solid #8400ff; */
+  padding-top: 50px;
 }
 
 .frame {
@@ -59,7 +53,7 @@
   width: 100%;
   min-height: 100vh;
   height: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 @media screen and (max-width: 800px) {
@@ -149,7 +143,6 @@
   height: 40vh;
   direction: rtl;
   padding: 16px;
-  margin-top: 40px;
 }
 
 .about-site p {
@@ -162,7 +155,7 @@
   text-decoration: none;
   margin-top: 5px;
   font-size: 14px;
-} 
+}
 
 .about-site button {
   outline: none;
@@ -173,4 +166,18 @@
   cursor: pointer;
   border: 2px solid #0c4de6;
   margin-left: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .app {
+    padding-bottom: 200px;
+    flex-direction: column;
+  }
+  .about-site {
+    width: 100%;
+    order: 2;
+  }
+  html {
+    font-size: 12px;
+  }
 }

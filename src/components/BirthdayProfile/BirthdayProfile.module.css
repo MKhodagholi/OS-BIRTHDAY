@@ -23,13 +23,14 @@
   object-fit: cover;
   object-position: center;
   margin: 0 auto;
+  user-select: none;
+  pointer-events: none;
 }
 
 .content {
   position: absolute;
   bottom: 0;
   display: flex;
-  height: 30px;
   width: 100%;
   background-color: #1b1b1b;
   color: #fff;
@@ -53,6 +54,7 @@
   display: block;
   width: 100%;
   overflow: auto;
+  overflow-x: hidden;
 }
 
 .birthday-card:hover .date {
@@ -72,4 +74,15 @@
 
 .date span {
   margin-right: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .birthday-card {
+    width: 175px;
+    height: 175px;
+  }
+  
+  .date {
+    width: 60%;
+  }
 }
