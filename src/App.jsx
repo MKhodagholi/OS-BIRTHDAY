@@ -81,11 +81,13 @@ function App() {
         <p>
           و در آخر اگر مشکلی دیدید ممنون میشم از طریق لینک زیر بهم بگید.
           <br />
-          <a href="https://github.com/MKhodagholi/OS-BIRTHDAY/issues">
+          <a href="https://github.com/MKhodagholi/OS-BIRTHDAY/issues" target="_blank">
             لینک ایشو های پروژه
           </a>
         </p>
-        <p>آیدی تلگرام من: mdkhodagholi@</p>
+        <p>
+          <a href="https://t.me/mkhodagholi" target="_blank">آیدی تلگرام من</a>
+        </p>
         <button onClick={musicClickHandler}>موزیک</button>
         <button onClick={offMusicHandler}>قطع موزیک</button>
       </div>

@@ -166,6 +166,7 @@
   .app {
     /* padding-bottom: 200px; */
     flex-direction: column;
+    height: calc(100vh - 122.5px);
   }
   .about-site {
     width: 100%;
